@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <title>Outfit Destresser</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+</head>
+
+<body>
+  <div class = "centering">
+<br>
+<br>
+<br>
+<div class="black_box">
+<h1>Don't Stress, Just Dress</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="black_box_bigger">
+<% if @average <= 0 %>
+  <p> Dont go outside. If you do, you have been warned.</p>
+
+<% elsif @average > 0 && @average <= 10 %>
+  <h2> Based on the weather, it would be best to wear a big puffer coat with a chunky sweater underneath, snowpants over leggings, snowboots, a hat, and warm gloves.</h2>
+
+<% elsif @average > 10 && @average <= 30 %>
+  <h2> Based on the weather, I suggest a large coat, boots, jeans, and a big knit sweater. Don't forget a scarf and gloves!</h2>
+
+<% elsif @average > 30 && @average <= 50%>
+  <h2> Based on the weather, it looks like a good day to wear uggs, leggings, a shirt, a warm jacket or coat.</h2>
+
+<% elsif @average > 50 && @average <= 55%>
+  <h2> Based on the weather, you may want to wear yoga pants or leggings, uggs, and a sweater or a shirt and fleece.</h2>
+
+<% elsif @average > 55 && @average <= 65%>
+  <h2> Based on the weather, you might want to wear leggings, a light sweater, sneakers (like supergas), and pack a sweatshirt.</h2>
+
+<% elsif @average > 65 && @average <= 70%>
+  <h2> Based on the weather, I suggest sport shorts or leggings, a comfy short sleeve shirt, and sandals or sneakers</h2>
+
+<% elsif @average > 70 && @average <= 80%>
+  <h2> Based on the weather, maybe a spaghetti strap dress with a sweater and sandals for the day.</h2>
+
+<% elsif @average > 80 && @average <= 85%>
+  <h2> Based on the weather, it looks like a skirt, tanktop with a cardigan, and sandals will be your best option</h2>
+
+<% elsif @average > 85 && @average <= 95%>
+  <h2> Based on the weather, you probably want to wear jean shorts, a tanktop, and flipflops</h2>
+
+<% elsif @average > 95 %>
+  <h2> The Earth is obviously approaching the sun so it really doesnt matter what you wear.</h2>
+
+<% end %>
+
+<%= @rain %>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="dif_box">
+<p>Source: <a href="http://www.weather.com/">http://www.weather.com/</a></p>
+</div>
+</body>
+</html>
